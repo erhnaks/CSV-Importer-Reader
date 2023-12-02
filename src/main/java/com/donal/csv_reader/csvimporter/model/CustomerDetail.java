@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "customer_details")
-public class CustomerDetails {
+public class CustomerDetail {
     @Id
     @Column(name = "id")
     private long id;
@@ -28,12 +28,12 @@ public class CustomerDetails {
     @Column(name = "postcode")
     private String postCode;
 
-    public CustomerDetails() {
+    public CustomerDetail() {
     }
 
-    public CustomerDetails(long id, String customerReference, String customerName,
-                           String addressLineOne, String addressLineTwo, String town,
-                           String county, String country, String postCode) {
+    public CustomerDetail(long id, String customerReference, String customerName,
+                          String addressLineOne, String addressLineTwo, String town,
+                          String county, String country, String postCode) {
         this.id = id;
         this.customerReference = customerReference;
         this.customerName = customerName;
@@ -43,6 +43,10 @@ public class CustomerDetails {
         this.county = county;
         this.country = country;
         this.postCode = postCode;
+    }
+
+    public CustomerDetail(String customerReference, String customerName, String addressLineOne,
+                          String addressLineTwo, String town, String county, String country, String postcode) {
     }
 
     public long getId() {
