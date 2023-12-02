@@ -15,35 +15,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVImporter {
-
     public static String TYPE = "text/csv";
     static String[] HEADERs = {"customer_reference", "customer_name", "address_line_one", "address_line_two", "town", "county", "country", "postcode"};
 
 
     public static boolean hasCSVFormat(MultipartFile file) {
-
         return TYPE.equals(file.getContentType());
     }
 
     public static List<CustomerDetail> customerDetails(InputStream in) {
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8));
              CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT
-                                                        .withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());) {
+                     .withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());) {
 
-            List<CustomerDetail> customers = new ArrayList<CustomerDetail>();
+            List<CustomerDetail> customers = new ArrayList<>();
 
             Iterable<CSVRecord> csvRecords = csvParser.getRecords();
 
             for (CSVRecord record : csvRecords) {
-                CustomerDetail customer = new CustomerDetail(
-                        record.get("customer_reference"),
-                        record.get("customer_name"),
-                        record.get("address_line_one"),
-                        record.get("address_line_two"),
-                        record.get("town"),
-                        record.get("county"),
-                        record.get("country"),
-                        record.get("postcode"));
+                CustomerDetail customer = new CustomerDetail();
+                customer.setCustomerReference(record.get("customer_reference"));
+                customer.setCustomerName(record.get("customer_name"));
+                customer.setAddressLineOne(record.get("address_line_one"));
+                customer.setAddressLineTwo(record.get("address_line_two"));
+                customer.setTown(record.get("town"));
+                customer.setCounty(record.get("county"));
+                customer.setCountry(record.get("country"));
+                customer.setPostCode(record.get("postcode"));
 
                 customers.add(customer);
             }
@@ -52,4 +50,5 @@ public class CSVImporter {
             throw new RuntimeException("Failed to convert CSV file: " + e.getMessage());
         }
     }
+
 }

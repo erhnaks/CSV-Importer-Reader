@@ -18,14 +18,10 @@ import java.util.List;
 @Controller
 @RequestMapping("/api")
 public class CSVController {
-    private final CSVService service;
+@Autowired
+CSVService service;
 
-    @Autowired
-    public CSVController(CSVService service) {
-        this.service = service;
-    }
-
-    public static String IMPORT_SUCCESS_MESSAGE = "The CSV file '%s' has been successfully uploaded to the server.";
+    public static String IMPORT_SUCCESS_MESSAGE = "The CSV file %s has been successfully uploaded to the server.";
 
     public static String CSV_FORMAT_NOT_SUPPORTED = "Sorry, only CSV files are supported!";
 
