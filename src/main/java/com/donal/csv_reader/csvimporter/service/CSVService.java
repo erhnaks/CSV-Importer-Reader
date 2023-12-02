@@ -13,11 +13,8 @@ import java.util.List;
 @Service
 public class CSVService {
 
-    private CustomerDetailsRepository repository;
-
     @Autowired
-    public CSVService(CustomerDetailsRepository repository) {
-    }
+    private CustomerDetailsRepository repository;
 
     public void save(MultipartFile file) {
         try {
