@@ -1,0 +1,11 @@
+customer_reference,customer_name,address_line_one,address_line_two,town,county,country,postcode
+CX123456,John Doe,1 Java Street,Spring Lane,Java,Spring,Oracle,JV1 7QL
+CX234567,Jane Smith,2 Code Avenue,Unit 42,Codetown,Programming,Oracle,JV2 8PQ
+CX345678,Bob Coder,3 Bit Lane,Suite 101,Bitville,Codeville,Java,JV3 9RP
+CX456789,Alice Developer,4 Script Road,Apt 7,Scriptington,Developmentshire,Java,JV4 6WK
+CX567890,Eva Programmer,5 Byte Boulevard,Room 3,Byteland,Codeborough,Oracle,JV5 5BT
+CX678901,Mike Java,6 Compile Crescent,Flat 22,Javatown,Developerville,Java,JV6 4HN
+CX789012,Sara Code,7 Algorithm Street,Unit 15,Codefield,Developmentton,Oracle,JV7 3LS
+CX890123,David Debug,8 Exception Lane,Suite 5,Debugsville,Testingham,Java,JV8 2MP
+CX901234,Olivia Script,9 Loop Road,Apartment 12,Scriptsville,Developmentshire,Oracle,JV9 1XF
+CX012345,Peter Byte,10 Array Avenue,Room 8,Byteland,Programming,Java,JV0 6RZ
