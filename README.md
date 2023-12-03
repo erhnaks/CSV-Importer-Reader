@@ -25,6 +25,19 @@ This Java console application reads customer data from a CSV file, converts it t
 - Run the Java application to process the CSV file and interact with the REST API.
 - Check the provided documentation for detailed instructions and API endpoints.
 
+## Screenshots
+### Succesful Import PostMan Response
+![Screenshot 2023-12-03 110242](https://github.com/erhnaks/CSV-Importer-Reader/assets/97620234/7591d496-33cf-44ab-bf96-7149a049a481)
+
+### Not a CSV format Import PostMan Response
+![Screenshot 2023-12-03 110001](https://github.com/erhnaks/CSV-Importer-Reader/assets/97620234/57a3ab55-c318-4794-80f4-2d3ffd56cfce)
+
+### Fetch all information from the database and format it in JSON.
+![Screenshot 2023-12-03 110326](https://github.com/erhnaks/CSV-Importer-Reader/assets/97620234/3b18c601-8b88-43b9-9a17-f73899824e77)
+
+### Fetch information from the database by Customer Reference and format it in JSON.
+![Screenshot 2023-12-03 104631](https://github.com/erhnaks/CSV-Importer-Reader/assets/97620234/81c69bfe-e135-4d83-9531-691619c1944b)
+
 ## Documentation
 For more information on the project, architecture, and usage instructions, refer to the [Documentation](src/main/resources).
 
