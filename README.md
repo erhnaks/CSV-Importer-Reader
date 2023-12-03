@@ -1,10 +1,15 @@
-# **_CSV Importer Assignment_**
-
-# Project Brief
-
 # CSV to REST API Integration
 
 ## Contents
+* [Brief Description](#brief-description)
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Documentation](#documentation)
+* [Author](#author)
+
+## Brief Description
 This Java console application reads customer data from a CSV file, converts it to JSON, and sends it to a REST API. The API stores data in a SQL database and It will provide filtered results based on customer reference if the parameter is present otherwise, it will return all the data in JSON format.
 
 ## Features
